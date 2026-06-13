@@ -1,0 +1,25 @@
+{
+  "firestore": {
+    "indexes": "firestore.indexes.json"
+  },
+  "functions": {
+    "source": "functions",
+    "codebase": "default",
+    "runtime": "nodejs20",
+    "ignore": [
+      "node_modules",
+      ".git",
+      ".gitignore",
+      "firebase-debug.log",
+      "firebase-debug.*.log",
+      "*.local",
+      "src",
+      "tsconfig.json",
+      ".firebaseignore",
+      "*.log"
+    ],
+    "predeploy": [
+      "npm --prefix \"$RESOURCE_DIR\" run build"
+    ]
+  }
+}

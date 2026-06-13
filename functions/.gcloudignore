@@ -1,0 +1,37 @@
+# This file specifies files that are *not* uploaded to Google Cloud Functions
+# It works in addition to .firebaseignore
+
+# Node modules - installed on server from package.json
+node_modules/
+
+# TypeScript source - only compiled JS is needed
+src/
+*.ts
+tsconfig.json
+
+# Git
+.git/
+.gitignore
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# Local config
+*.local
+.env
+.env.*
+
+# macOS
+.DS_Store
+
+# Test files
+*.test.js
+*.spec.js
+__tests__/

@@ -1,0 +1,91 @@
+{
+  "expo": {
+    "name": "Velune",
+    "slug": "vestiary",
+    "version": "1.1.2",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "vestiary",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "co.velouria.vestiary",
+      "buildNumber": "5",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false,
+        "NSCalendarsUsageDescription": "Velune needs access to your calendar to suggest outfits appropriate for your upcoming events.",
+        "NSCalendarsFullAccessUsageDescription": "Velune needs access to your calendar in order to assess event-appropriate clothing.",
+        "NSRemindersUsageDescription": "iOS requires this permission to access your calendar events. Velune uses your calendar to suggest outfits appropriate for your upcoming events.",
+        "NSRemindersFullAccessUsageDescription": "Velune needs access to your reminders to coordinate with your calendar events.",
+        "NSCameraUsageDescription": "Velune needs camera access so that you can snap photos of items in your wardrobe.",
+        "NSPhotoLibraryUsageDescription": "Velune needs photo library access to select existing photos of your clothing.",
+        "NSLocationWhenInUseUsageDescription": "Velune uses your location so that you can receive wardrobe suggestions based on the weather.",
+        "NSLocationAlwaysUsageDescription": "Velune uses your location to provide weather-appropriate outfit recommendations.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "Velune uses your location so that you can receive wardrobe suggestions based on the weather.",
+        "NSUserNotificationsUsageDescription": "Velune sends you daily reminders to check your personalized outfit picks."
+      }
+    },
+    "android": {
+      "package": "co.velouria.vestiary",
+      "versionCode": 6,
+      "blockedPermissions": [
+        "android.permission.READ_MEDIA_VIDEO"
+      ],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/icon.png",
+        "backgroundColor": "#1a1f3c"
+      },
+      "edgeToEdgeEnabled": true
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/icon.png"
+    },
+    "plugins": [
+      "expo-dev-client",
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "ios": {
+            "image": "./assets/images/velune_splash_full.png",
+            "backgroundColor": "#14173A",
+            "resizeMode": "cover",
+            "enableFullScreenImage_legacy": true
+          }
+        }
+      ],
+      "expo-web-browser",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/images/icon.png",
+          "color": "#c9a756",
+          "sounds": []
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "useFrameworks": "static",
+            "deploymentTarget": "15.1",
+            "buildReactNativeFromSource": true
+          }
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "cf0cdde8-1fdd-49fd-b117-49ea5f40197d"
+      }
+    },
+    "owner": "msvelouriagmailcom"
+  }
+}

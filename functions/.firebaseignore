@@ -1,0 +1,41 @@
+# Dependencies (installed fresh during deployment)
+node_modules/
+
+# Source files (only lib/ with compiled JS is needed)
+src/
+
+# TypeScript config (not needed at runtime)
+tsconfig.json
+
+# Git
+.git/
+.gitignore
+
+# Logs
+*.log
+firebase-debug.log
+firebase-debug.*.log
+
+# Local env files
+*.local
+.env
+.env.*
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# macOS
+.DS_Store
+
+# Test files
+*.test.ts
+*.test.js
+*.spec.ts
+*.spec.js
+__tests__/
+
+# Parent project files that might leak in
+../
